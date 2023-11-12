@@ -1,0 +1,21 @@
+{
+  "name": "boilerplate-web-3",
+  "version": "1.0.0",
+  "description": "Vite based web3 boilerplate with 2 main folders: dapp + contracts",
+  "keywords": [
+    "Vite",
+    "Web3",
+    "React",
+    "Typescript",
+    "Hardhat",
+    "Solidity"
+  ],
+  "author": "Raza",
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^8.0.3"
+  },
+  "scripts": {
+    "prepare": "husky install"
+  }
+}
