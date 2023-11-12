@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+BRANCH_NAME="$(git rev-parse --abbrev-ref HEAD)"
+
+VALID_BRANCH_REGEX='^((fix|feat|ref)\/[a-zA-Z0-9\-]+)$'
+
+if [[ ! $BRANCH_NAME =~ $VALID_BRANCH_REGEX ]]; then
+    echo "There is something wrong with your branch name."
+    echo "Examples:"
+    echo "feat/dapp-changes"
+    echo "fix/modal-dispay-error"
+    echo "ref/wallet-btn-restye"
+    exit 1
+fi
+
+exit 0
